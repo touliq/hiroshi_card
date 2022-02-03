@@ -70,7 +70,7 @@ router.post('/edit', function(req, res, next) {
 router.get('/delete', function(req, res, next) {
     const id = req.query.id;
     db.serialize(() => {
-        const q = "select * from memos where id = ?";
+        const q = "select * from raikyaku where id = ?";
         db.get(q, [id], (err, row) => {
             if (!err) {
                 const data = {
@@ -86,7 +86,7 @@ router.get('/delete', function(req, res, next) {
 
 router.post('/delete', function(req, res, next) {
     const id = req.body.id;
-    const q = "delete from memos where id = ?";
+    const q = "delete from raikyaku where id = ?";
     db.run(q, id);
     res.redirect('/memo');
 });

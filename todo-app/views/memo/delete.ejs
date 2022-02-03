@@ -7,7 +7,7 @@
     <h3><%= title %></h3>
     <p><%= content %></p>
     <div>
-      <p>メモ内容：<%= memoData.text %></p>
+      <p>メモ内容：<%= memoData.jikan %>&nbsp;<%= memoData.gakuban %>&nbsp;<%= memoData.namae %></p>
       <form action="/memo/delete" method="post">
         <input type="hidden" name="id" value="<%= memoData.id %>">
         <p><input type="submit" value="削除"></p>
