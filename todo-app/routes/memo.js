@@ -66,6 +66,18 @@ router.post('/edit', function(req, res, next) {
     res.redirect('/memo');
 });*/
 
+router.get('/table-delete',function(req, res, next){
+    const data = {
+	title: 'テーブル削除',
+	content: 'テーブルを削除します'
+    }
+    res.render('memo/table-delete', data);
+});
+
+router.post('/table-delete',function(req,res,next){
+    db.run('delete from raikyaku')
+    res.redirect('/memo');
+});
 
 router.get('/delete', function(req, res, next) {
     const id = req.query.id;
