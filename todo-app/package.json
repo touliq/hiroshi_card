@@ -13,6 +13,7 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "nodejs": "0.0.0",
+    "python-shell": "^3.0.1",
     "sqlite3": "^5.0.2"
   }
 }
