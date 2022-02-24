@@ -3,8 +3,6 @@ var router = express.Router();
 
 var sqlite3 = require('sqlite3');
 //データベースオブジェクトの取得
-var {PythonShell} = require('python-shell');
-
 const db = new sqlite3.Database('memo_data.sqlite3');
 
 router.get('/', function(req, res, next) {
