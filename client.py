@@ -55,7 +55,7 @@ def main2(number,name):
         except Exception as e:#例外処理
             Logoutput('sa-banitunagarimasendeshita ERROR')
             print(e)
-            os.system("nmcli device wifi connect Hotspot-ubuntu password password")#サーバのホットスポットに接続
+            os.system("nmcli device wifi connect ネットワーク名 password password")#サーバのホットスポットに接続
             time.sleep(5)
     print(time)
     print(number)
