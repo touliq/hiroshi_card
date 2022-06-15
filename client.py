@@ -167,7 +167,7 @@ def main():
             socket1.send(name.encode())
             os.system("sudo reboot")#再起動する
 os.system("sudo python3 wificon.py")
-os.system("nmcli device wifi connect Hotspot-ubuntu password saVLNDK1") #サーバのホットスポットに接続する
+os.system("nmcli device wifi connect ネットワーク名 password パスワード") #サーバのホットスポットに接続する
 #time.sleep(5)
 if __name__ == "__main__":
     main()
