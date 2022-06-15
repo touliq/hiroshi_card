@@ -20,7 +20,7 @@ GPIO.setup(PNO, GPIO.OUT)
 import socket,json
 import os
 ip1 = 'IP'#サーバのip
-port1 = 'port'
+port1 = port
 
 
 with open ('receiver.pem','rb') as f:
@@ -81,7 +81,7 @@ def main2(number,name):
 
 
 # 学生証のサービスコード
-service_code = 0x09CB
+service_code = servicecode
 
 def sakujo(sakujomae):#不必要なデータを削除
     try:
